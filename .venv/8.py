@@ -23,7 +23,7 @@ def format_date(date_str):
         if hour > 12:
             hour -= 12
 
-        print(f"{day:02}.{month:02}.{year[2:]} {hour:02}:{minute}:{second} {period}")
+        print(f"{day:02}.{month:02}.{year[2:]} {hour:02}:{minute:02}:{second:02} {period}")
 
-    except (ValueError:
+    except (ValueError):
         print("Ошибка формата")
